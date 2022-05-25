@@ -5,8 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn JS</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <h1>Свойства и методы строк</h1>
+    <h2>Длина строки</h2>
+    <img src="./img/length.png" alt="Свойство length" width="800" height="100%">
+    <h2>Доступ к символам</h2>
+    <img src="./img/symbol_access.png" alt="Доступ к символам" width="800" height="100%">
+    <h2>Методы toLowerCase() и toUpperCase()</h2>
+    <img src="./img/case_change.png" alt="Изменение регистра" width="800" height="100%">
+    <h2>Поиск подстроки</h2>
+    <h3>Первый метод — str.indexOf(substr, pos).</h3>
+    <p>Он ищет подстроку substr в строке str, начиная с позиции pos,<br> и возвращает позицию, на которой располагается совпадение,<br> либо -1 при отсутствии совпадений.</p>
+    <img src="./img/indexOf.png" alt="indexOf" width="800" height="100%">
+    <p>Необязательный второй аргумент позволяет начать поиск с определённой позиции.<br>Например, первое вхождение "id" — на позиции 1. Для того, чтобы найти следующее, начнём поиск с позиции 2:</p>
+    <img src="./img/2arg.png" alt="indexOf" width="800" height="100%">
+    <h3>Метод str.includes(substr, pos)</h3>
+    <p>метод str.includes(substr, pos) возвращает true, если в строке str есть подстрока substr, либо false, если нет.</p>
+    <img src="./img/includes.png" alt="includes" width="800" height="100%">
+    <p>Необязательный второй аргумент str.includes позволяет начать поиск с определённой позиции:</p>
+    <img src="./img/includes2.png" alt="includes" width="800" height="100%">
+    <h3>Методы str.startsWith и str.endsWith</h3>
+    <p>Методы str.startsWith и str.endsWith проверяют, соответственно,<br> начинается ли и заканчивается ли строка определённой строкой:</p>
+    <img src="./img/startsWith.png" alt="startsWith " width="800" height="100%">
+    <h2>Получение подстроки</h2>
+    <h3>В JavaScript есть 3 метода для получения подстроки: <span style="color: red;">substring, substr и slice</span>.</h3>
+    <h3>Метод str.slice(start [, end])</h3>
+    <p>Возвращает часть строки от start до (не включая) end.</p>
+    <img src="./img/slice.png" alt="slice" width="800" height="100%">
+    <h3>str.substring(start [, end])</h3>
+    <p>Возвращает часть строки между start и end (не включая) end.<br>
+    Это — почти то же, что и slice, но можно задавать start больше end.<br>
+    Если start больше end, то метод substring сработает так, как если бы аргументы были поменяны местами.</p>
+    <img src="./img/substring.png" alt="substring" width="800" height="100%">
+    <h3>str.substr(start [, length])</h3>
+    <p>Возвращает часть строки от start длины length.</p>
+    <img src="./img/substr.png" alt="substr" width="800" height="100%">
     <script src="./script.js"></script>
+    <h2>Сравнение строк</h2>
+    <h3>Метод str.codePointAt(pos)</h3>
+    <p>Возвращает код для символа, находящегося на позиции pos:</p>
+    <img src="./img/codePointAt.png" alt="codePointAt" width="800" height="100%">
+    <h3>Метод String.fromCodePoint(code)</h3>
+    <p>Создаёт символ по его коду code</p>
+    <img src="./img/fromCodePoint.png" alt="fromCodePoint" width="800" height="100%">
 </body>
 </html>
